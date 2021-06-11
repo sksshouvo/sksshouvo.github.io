@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Soft BD</title>
+    <style>
+        *{
+            text-align: center;
+        }
+        .main_div{
+            width: 60%;
+            margin: 0 auto;
+        }
+        .main_div > h1{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_div">
+        <h2> Welcome To <a href="https://customsoftbd.com">Custom Soft BD</a> </h2>
+        <h1>400 Bad Request</h1>
+        <p>The 400 (Bad Request) status code indicates that the server cannot or
+            will not process the request due to something that is perceived to be
+            a client error (e.g., malformed request syntax, invalid request
+            message framing, or deceptive request routing).</p>
+            <h2>Redirecting you to Home Page in <span id="rdirect_duration">0</span>.00 SEC</h2>
+    </div>
+    <script>
+        var minutes  = 60;
+       function general(){
+           --minutes;
+           document.getElementById("rdirect_duration").innerHTML =minutes;
+           if(minutes == 0){
+            window.location.href = "https://customsoftbd.com";
+           }
+       }
+       setInterval(general, 1000);
+    </script>
+</body>
+</html>

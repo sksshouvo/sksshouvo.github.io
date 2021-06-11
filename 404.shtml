@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Soft BD</title>
+    <style>
+        * {
+            text-align: center;
+        }
+
+        .main_div {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        .main_div>h1 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_div">
+        <h2> Welcome To <a href="https://customsoftbd.com">Custom Soft BD</a> </h2>
+        <h1> 404 Not Found</h1>
+        <p>
+            The 404 (Not Found) status code indicates that the origin server did
+            not find a current representation for the target resource or is not
+            willing to disclose that one exists. A 404 status code does not
+            indicate whether this lack of representation is temporary or
+            permanent; the 410 (Gone) status code is preferred over 404 if the
+            origin server knows, presumably through some configurable means, that
+            the condition is likely to be permanent.
+
+            A 404 response is cacheable by default; i.e., unless otherwise
+            indicated by the method definition or explicit cache controls (see
+            Section 4.2.2 of [RFC7234]).</p>
+        <h2>Redirecting you to Home Page in <span id="rdirect_duration">0</span>.00 SEC</h2>
+    </div>
+    <script>
+        var minutes = 60;
+        function general() {
+            --minutes;
+            document.getElementById("rdirect_duration").innerHTML = minutes;
+            if (minutes == 0) {
+                window.location.href = "https://customsoftbd.com";
+            }
+        }
+        setInterval(general, 1000);
+    </script>
+</body>
+
+</html>
